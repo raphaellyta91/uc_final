@@ -1,0 +1,55 @@
+
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Chat - Usuário 2</title>
+
+  <!-- Estilos -->
+  <link rel="stylesheet" href="estilo.css">
+</head>
+<body>
+
+  <main class="container">
+    <header>
+      <h2 id="userTitle">Usuário 2</h2>
+    </header>
+
+    <!-- Formulário de nome -->
+    <section id="formName">
+      <label for="nameInput">Seu nome:</label>
+      <input 
+        type="text" 
+        id="nameInput" 
+        placeholder="Digite seu nome"
+        autocomplete="name"
+      >
+      <button id="btnEnter" type="button">Avançar</button>
+    </section>
+
+    <!-- Área do chat -->
+    <section id="chatArea" class="hidden">
+      <div id="messages" aria-live="polite"></div>
+
+      <div class="controls">
+        <input 
+          type="text" 
+          id="msgInput" 
+          placeholder="Escreva sua mensagem"
+          autocomplete="off"
+        >
+        <button id="sendBtn" type="button">Enviar</button>
+      </div>
+          <!-- Opções -->
+    <section id="options" class="hidden">
+      <button id="btnNewChat" type="button">Novo Chat</button>
+    </section>
+
+    </section>
+  </main>
+
+  <!-- Script -->
+  <script src="renderer2.js"></script>
+</body>
+</html>
