@@ -65,7 +65,6 @@ function appendMessage(m, isMine) {
   p.innerHTML = `<strong>${m.name}</strong> <small style="float:right">${m.time}</small><div>${m.text}</div>`;
   
   messagesDiv.appendChild(p);
- // messagesDiv.scrollTop = messagesDiv.scrollHeight;
 }
 
 
